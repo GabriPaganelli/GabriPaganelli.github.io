@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Comparing The Simpsons and Family Guy with Text Mining — Gabriele Paganelli" />
+  <title>Simpsons vs Family Guy — Text Mining — Gabriele Paganelli</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><span>G</span>P</a>
+    <ul class="nav-links" role="list">
+      <li><a href="../index.html#home">Home</a></li>
+      <li><a href="../index.html#projects" class="active">Projects</a></li>
+      <li><a href="../index.html#signals">Signals</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="nav-mobile" role="dialog" aria-label="Mobile navigation">
+  <ul role="list">
+    <li><a href="../index.html#home">Home</a></li>
+    <li><a href="../index.html#projects">Projects</a></li>
+    <li><a href="../index.html#signals">Signals</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+</div>
+
+
+<!-- PROJECT HERO -->
+<header class="project-page-hero">
+  <div class="container">
+    <a href="../index.html#projects" class="back-link">&#8592; Back to Projects</a>
+
+    <p class="section-label">Project 04</p>
+    <h1 class="project-page-title">Comparing The Simpsons and Family Guy with Text Mining</h1>
+    <p class="project-page-subtitle">Computational analysis of humor, sentiment, and latent topics across two iconic animated series.</p>
+
+    <div class="project-page-tags">
+      <span class="tag-lg">Text Mining</span>
+      <span class="tag-lg">LDA &amp; STM</span>
+      <span class="tag-lg">Sentiment Analysis</span>
+    </div>
+  </div>
+</header>
+
+
+<!-- ABSTRACT -->
+<section class="proj-section">
+  <div class="container">
+    <p class="proj-section-label">Overview</p>
+    <h2 class="proj-section-title">Abstract</h2>
+    <p class="proj-text">
+      This project conducted a comparative analysis of The Simpsons and Family Guy dialogues using text mining, topic modeling (LDA and STM), and sentiment analysis. Results confirm many perceived differences between the two series and reveal evolving narrative and linguistic patterns over time.
+    </p>
+  </div>
+</section>
+
+
+<!-- KEY TAKEAWAY -->
+<section class="proj-section">
+  <div class="container">
+    <p class="proj-section-label">Insight</p>
+    <h2 class="proj-section-title">Key Takeaway</h2>
+    <p class="proj-text">
+      Family Guy exhibits a more provocative, colorfully emotional language; The Simpsons maintains a more neutral and accessible tone. Topic modeling identifies recurring themes such as family life, media, holidays, school, work, marriage, and politics, with differing treatment across series. Sentiment analysis confirms these tonal differences and highlights character- and theme-specific emotional dynamics over time.
+    </p>
+  </div>
+</section>
+
+
+<!-- VISUALS -->
+<section class="proj-section">
+  <div class="container">
+    <p class="proj-section-label">Figures</p>
+    <h2 class="proj-section-title">Visuals</h2>
+    <div class="visuals-grid">
+      <div class="visual-cell"><canvas class="visual-pdf" data-pdf-src="../assets/images/text-analysis-02.pdf"></canvas></div>
+      <div class="visual-cell"><canvas class="visual-pdf" data-pdf-src="../assets/images/text-analysis-01.pdf"></canvas></div>
+      <div class="visual-cell"><canvas class="visual-pdf" data-pdf-src="../assets/images/text-analysis-03.pdf"></canvas></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- LINKS -->
+<section class="proj-section">
+  <div class="container">
+    <p class="proj-section-label">Resources</p>
+    <h2 class="proj-section-title">Links</h2>
+    <div class="proj-links">
+      <a href="https://github.com/GabriPaganelli/simpsons-familyguy-nlp" class="proj-link-btn" target="_blank" rel="noopener noreferrer">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.167 6.839 9.49.5.09.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.577.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+        GitHub Repository
+      </a>
+      <a href="../assets/pdfs/overviews/text-analysis-overview.pdf" class="proj-link-btn" target="_blank" rel="noopener noreferrer">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        PDF Overview
+      </a>
+      <a href="../assets/pdfs/reports/text-analysis-report.html" class="proj-link-btn" target="_blank" rel="noopener noreferrer">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        Technical Report
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <p>Gabriele Paganelli &copy; <span id="year"></span></p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

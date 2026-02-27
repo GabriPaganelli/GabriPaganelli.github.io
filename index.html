@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gabriele Paganelli — Data Scientist & Applied Statistician. Portfolio of projects in statistical modeling, time-series analysis, Bayesian inference, and more." />
+  <title>Gabriele Paganelli</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ================================================================
+     NAVBAR
+================================================================ -->
+<nav aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo"><span>G</span>P</a>
+    <ul class="nav-links" role="list">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#signals">Signals</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile nav overlay -->
+<div class="nav-mobile" role="dialog" aria-label="Mobile navigation">
+  <ul role="list">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#signals">Signals</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+
+
+<!-- ================================================================
+     HERO
+================================================================ -->
+<section id="home" aria-label="Introduction">
+  <div class="hero-content">
+
+    <!-- Avatar -->
+    <svg class="hero-avatar" xmlns="http://www.w3.org/2000/svg"
+         width="100" height="100" viewBox="0 0 100 100"
+         aria-hidden="true">
+      <circle cx="50" cy="50" r="50" fill="#0e1827"/>
+      <circle cx="50" cy="50" r="49" fill="none" stroke="rgba(74,144,226,0.18)" stroke-width="1"/>
+      <text x="50" y="57"
+            font-family="Inter, sans-serif"
+            font-size="26" font-weight="600"
+            text-anchor="middle"
+            fill="#2e4a6e"
+            letter-spacing="3">GP</text>
+    </svg>
+
+    <h1 class="hero-name">Gabriele Paganelli</h1>
+    <p class="hero-role">Data Scientist &amp; Applied Statistician</p>
+    <p class="hero-tagline">
+      Transforming complex data into actionable insights through
+      statistical modeling and thoughtful analysis.
+    </p>
+
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#contact" class="btn-outline">Get in Touch</a>
+      <a href="assets/pdfs/cv.pdf" class="btn-outline" download>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="7 10 12 15 17 10"/>
+          <line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        Download CV
+      </a>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="hero-scroll" aria-hidden="true">
+    <span>scroll</span>
+    <svg width="14" height="22" viewBox="0 0 14 22" fill="none" stroke="currentColor" stroke-width="1.5">
+      <rect x="1" y="1" width="12" height="20" rx="6"/>
+      <line x1="7" y1="5" x2="7" y2="9"/>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ================================================================
+     ABOUT
+================================================================ -->
+<section id="about" aria-label="About">
+  <div class="container">
+    <p class="section-label fade-in">About</p>
+    <h2 class="section-title fade-in fade-in-delay-1">Who I Am</h2>
+
+    <div class="about-text fade-in fade-in-delay-2">
+      <p>
+        I am Gabriele Paganelli, an aspiring Data Scientist specializing in statistical modeling and machine learning. My work focuses on understanding the structure behind data and translating complex and noisy datasets into interpretable and reliable insights. International academic experiences and interdisciplinary projects have shaped a collaborative, impact-oriented approach, bridging theory and practical application.
+      </p>
+      <p style="margin-top: 14px; font-size: 0.90rem; color: var(--text-faint); line-height: 2;">
+        MSc in Statistics, University of Padua<br>
+        Exchange semester at Boston University<br>
+        BSc in Statistics for Technologies and Sciences, University of Padua (110/110 cum laude)<br>
+        Exchange year in Canada
+      </p>
+      <a href="assets/pdfs/cv.pdf" class="signals-ext-link" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin-top:16px;">
+        View CV &#8599;
+      </a>
+    </div>
+
+<div class="about-badges fade-in fade-in-delay-3">
+  <span class="badge">Statistical Modeling</span>
+  <span class="badge">Bayesian Inference</span>
+  <span class="badge">Probabilistic Modeling</span>
+  <span class="badge">Time-Series Analysis</span>
+  <span class="badge">Machine Learning</span>
+  <span class="badge">Deep Learning</span>
+  <span class="badge">Network Analysis</span>
+  <span class="badge">Text Mining & NLP</span>
+  <span class="badge">R &amp; Python</span>
+</div>
+</section>
+
+
+<!-- ================================================================
+     PROJECTS
+================================================================ -->
+<section id="projects" aria-label="Projects">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label fade-in">Work</p>
+      <h2 class="section-title fade-in fade-in-delay-1">Projects</h2>
+    </div>
+
+    <div class="project-list">
+
+      <!-- ── PROJECT 1 ── -->
+      <div class="project-card fade-in">
+        <button class="project-header" aria-expanded="false">
+          <div class="project-header-left">
+            <span class="project-num">01</span>
+            <div>
+              <h3 class="project-title">Italian Energy Market Analysis</h3>
+              <div class="project-tags">
+                <span class="tag">SARIMA</span>
+                <span class="tag">VAR</span>
+                <span class="tag">Transfer Function</span>
+                <span class="tag">Cointegration</span>
+              </div>
+            </div>
+          </div>
+          <span class="project-arrow" aria-hidden="true">&#8250;</span>
+        </button>
+        <div class="project-body">
+          <div class="project-body-inner">
+            <p class="project-abstract">
+              This study analyzed the dynamic relationships between natural gas prices, renewable energy production, and the Italian national electricity price (PUN) over 2021–2025. Using a combination of univariate SARIMA, VAR, transfer function, and cointegration models, I identified short- and long-term interactions, highlighting the dominant role of gas in price formation, and provided predictive evidence that TFM_Gas is superior for short- to medium-term forecasting.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/GabriPaganelli/italian-energy-market" class="link-btn" target="_blank" rel="noopener noreferrer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.167 6.839 9.49.5.09.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.577.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                GitHub
+              </a>
+              <a href="assets/pdfs/overviews/energy-market-overview.pdf" class="link-btn" target="_blank" rel="noopener noreferrer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                PDF Overview
+              </a>
+              <a href="assets/pdfs/reports/energy-market-report.pdf" class="link-btn" target="_blank" rel="noopener noreferrer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Technical Report
+              </a>
+            </div>
+            <a href="projects/energy-market.html" class="view-project">
+              View Full Project &#8250;
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── PROJECT 2 ── -->
+      <div class="project-card fade-in fade-in-delay-1">
+        <button class="project-header" aria-expanded="false">
+          <div class="project-header-left">
+            <span class="project-num">02</span>
+            <div>
+              <h3 class="project-title">IceCube Neutrino Clustering and Source Modeling</h3>
+              <div class="project-tags">
+                <span class="tag">Bayesian Mixture Models</span>
+                <span class="tag">MCMC</span>
+                <span class="tag">Spatial-Energetic Analysis</span>
+              </div>
+            </div>
+          </div>
+          <span class="project-arrow" aria-hidden="true">&#8250;</span>
+        </button>
+        <div class="project-body">
+          <div class="project-body-inner">
+            <p class="project-abstract">
+              I developed and evaluated a sequence of Bayesian mixture models to classify high-energy neutrino events as astrophysical or atmospheric, combining spatial and energetic information. Models included joint spatial-energetic frameworks, spatial-weighted implementations, and energy-only variants with posterior spatial reweighting. Severe spectral degeneracy limited discrimination, but the workflow demonstrated a coherent Bayesian approach for large-scale event classification.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/GabriPaganelli/icecube-neutrino-bayes" class="link-btn" target="_blank" rel="noopener noreferrer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.167 6.839 9.49.5.09.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.577.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                GitHub
+              </a>
+              <a href="assets/pdfs/overviews/icecube-overview.pdf" class="link-btn" target="_blank" rel="noopener noreferrer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                PDF Overview
+              </a>
+              <a href="assets/pdfs/reports/icecube-report.pdf" class="link-btn" target="_blank" rel="noopener noreferrer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Technical Report
+              </a>
+            </div>
+            <a href="projects/icecube.html" class="view-project">
+              View Full Project &#8250;
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── PROJECT 3 ── -->
+      <div class="project-card fade-in fade-in-delay-2">
+        <button class="project-header" aria-expanded="false">
+          <div class="project-header-left">
+            <span class="project-num">03</span>
+            <div>
+              <h3 class="project-title">Mice LFP Data: GRU-Transformer</h3>
+              <div class="project-tags">
+                <span class="tag">GRU-Transformer</span>
+                <span class="tag">LFP Decoding</span>
+                <span class="tag">Bandpower Features</span>
+              </div>
+            </div>
+          </div>
+          <span class="project-arrow" aria-hidden="true">&#8250;</span>
+        </button>
+        <div class="project-body">
+          <div class="project-body-inner">
+            <p class="project-abstract">
+              Our experiments demonstrate that explicitly modeling temporal structure in band-limited LFP activity with a GRU-Transformer yields significantly better decoding of visual stimuli than a linear classifier trained on flattened power features. Improvements were consistent across multiple sessions, conditions, and class-imbalanced datasets, highlighting the importance of temporal dynamics in neural decoding.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/GabriPaganelli/mouse-lfp-transformer" class="link-btn" target="_blank" rel="noopener noreferrer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.167 6.839 9.49.5.09.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.577.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                GitHub
+              </a>
+              <a href="assets/pdfs/overviews/mice-lfp-overview.pdf" class="link-btn" target="_blank" rel="noopener noreferrer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                PDF Overview
+              </a>
+              <a href="assets/pdfs/reports/mice-lfp-report.pdf" class="link-btn" target="_blank" rel="noopener noreferrer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Technical Report
+              </a>
+            </div>
+            <a href="projects/mice-lfp.html" class="view-project">
+              View Full Project &#8250;
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── PROJECT 4 ── -->
+      <div class="project-card fade-in fade-in-delay-1">
+        <button class="project-header" aria-expanded="false">
+          <div class="project-header-left">
+            <span class="project-num">04</span>
+            <div>
+              <h3 class="project-title">Comparing The Simpsons and Family Guy with Text Mining</h3>
+              <div class="project-tags">
+                <span class="tag">Text Mining</span>
+                <span class="tag">LDA &amp; STM</span>
+                <span class="tag">Sentiment Analysis</span>
+              </div>
+            </div>
+          </div>
+          <span class="project-arrow" aria-hidden="true">&#8250;</span>
+        </button>
+        <div class="project-body">
+          <div class="project-body-inner">
+            <p class="project-abstract">
+              This project conducted a comparative analysis of The Simpsons and Family Guy dialogues using text mining, topic modeling (LDA and STM), and sentiment analysis. Results confirm many perceived differences between the two series and reveal evolving narrative and linguistic patterns over time.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/GabriPaganelli/simpsons-familyguy-nlp" class="link-btn" target="_blank" rel="noopener noreferrer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.167 6.839 9.49.5.09.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.577.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                GitHub
+              </a>
+              <a href="assets/pdfs/overviews/text-analysis-overview.pdf" class="link-btn" target="_blank" rel="noopener noreferrer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                PDF Overview
+              </a>
+              <a href="assets/pdfs/reports/text-analysis-report.html" class="link-btn" target="_blank" rel="noopener noreferrer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Technical Report
+              </a>
+            </div>
+            <a href="projects/simpsons-family-guy.html" class="view-project">
+              View Full Project &#8250;
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── PROJECT 5 ── -->
+      <div class="project-card fade-in fade-in-delay-2">
+        <button class="project-header" aria-expanded="false">
+          <div class="project-header-left">
+            <span class="project-num">05</span>
+            <div>
+              <h3 class="project-title">Bachelor's Thesis — The Web of Fame (Pantheon Dataset)</h3>
+              <div class="project-tags">
+                <span class="tag">Network Analysis</span>
+                <span class="tag">Multivariate Analysis</span>
+                <span class="tag">Centrality Metrics</span>
+                <span class="tag">ERGM</span>
+              </div>
+            </div>
+          </div>
+          <span class="project-arrow" aria-hidden="true">&#8250;</span>
+        </button>
+        <div class="project-body">
+          <div class="project-body-inner">
+            <p class="project-abstract">
+              This project analyzed the Pantheon dataset to study historical figures' interactions over space and time, combining network analysis with relevance metrics. Limitations in existing models (ERGM degeneracy, complexity of large directed networks) were identified, and alternative modeling strategies (stochastic block models) were proposed.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/GabriPaganelli/pantheon-network-analysis" class="link-btn" target="_blank" rel="noopener noreferrer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.167 6.839 9.49.5.09.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.577.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                GitHub
+              </a>
+              <a href="assets/pdfs/overviews/pantheon-overview.pdf" class="link-btn" target="_blank" rel="noopener noreferrer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                PDF Overview
+              </a>
+              <a href="assets/pdfs/reports/pantheon-report.pdf" class="link-btn" target="_blank" rel="noopener noreferrer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Full Thesis
+              </a>
+            </div>
+            <a href="projects/pantheon.html" class="view-project">
+              View Full Project &#8250;
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.project-list -->
+  </div>
+</section>
+
+
+<!-- ================================================================
+     SIGNALS
+================================================================ -->
+<section id="signals" aria-label="Signals">
+  <div class="container">
+    <p class="section-label fade-in">Signals</p>
+    <h2 class="section-title fade-in fade-in-delay-1">Signals</h2>
+    <p class="signals-intro fade-in fade-in-delay-2">
+      A small selection of videos, conversations, and books that influence how I think about data, technology, and complex systems.
+    </p>
+
+    <div class="signals-grid">
+
+      <!-- Listening -->
+      <div class="fade-in">
+        <h3 class="signals-col-label">Listening</h3>
+        <ul class="signals-list">
+          <li><a href="https://open.spotify.com/show/44fllCS2FTFr2x2kjP9xeT" target="_blank" rel="noopener noreferrer">Hard Fork <span class="signals-desc">— AI, platforms, tech industry</span></a></li>
+          <li><a href="https://open.spotify.com/show/5oLIbjbUqQmSMVSm0qNLge" target="_blank" rel="noopener noreferrer">The Rest Is Science <span class="signals-desc">— scientific thinking</span></a></li>
+          <li><a href="https://open.spotify.com/show/6Es1phkjQsJtfx4JSej4r7" target="_blank" rel="noopener noreferrer">DataKnightmare: L'algoritmico è politico <span class="signals-desc">— algorithms &amp; society</span></a></li>
+          <li><a href="https://open.spotify.com/show/08zQP2peZmM9GrcKShLZvC" target="_blank" rel="noopener noreferrer">The Vergecast <span class="signals-desc">— technology landscape</span></a></li>
+          <li><a href="https://open.spotify.com/show/6TMBvIx2tWVA8AEPDU027j" target="_blank" rel="noopener noreferrer">Algoritmi by Datapizza <span class="signals-desc">— data science, AI, digital culture</span></a></li>
+        </ul>
+      </div>
+
+      <!-- Reading -->
+      <div class="fade-in fade-in-delay-1">
+        <h3 class="signals-col-label">Reading</h3>
+        <ul class="signals-list">
+          <li><a href="https://www.goodreads.com/book/show/242472.The_Black_Swan" target="_blank" rel="noopener noreferrer">The Black Swan <span class="signals-desc">— uncertainty &amp; risk</span></a></li>
+          <li><a href="https://www.goodreads.com/book/show/9682257-caos" target="_blank" rel="noopener noreferrer">Chaos: Making a New Science <span class="signals-desc">— complex systems</span></a></li>
+          <li><a href="https://www.goodreads.com/book/show/433567.Flatland" target="_blank" rel="noopener noreferrer">Flatland <span class="signals-desc">— dimensional thinking</span></a></li>
+          <li><a href="https://www.goodreads.com/book/show/223380.Stories_of_Your_Life_and_Others" target="_blank" rel="noopener noreferrer">Stories of Your Life and Others <span class="signals-desc">— speculative science</span></a></li>
+        </ul>
+        <a href="https://www.goodreads.com/gabrielepaganelli" class="signals-ext-link" target="_blank" rel="noopener noreferrer">
+          goodreads.com/gabrielepaganelli &#8599;
+        </a>
+      </div>
+
+      <!-- Watching -->
+      <div class="fade-in fade-in-delay-2">
+        <h3 class="signals-col-label">Watching</h3>
+        <ul class="signals-list">
+          <li><a href="https://www.youtube.com/@3blue1brown" target="_blank" rel="noopener noreferrer">3Blue1Brown <span class="signals-desc">— visual mathematics &amp; conceptual rigor</span></a></li>
+          <li><a href="https://www.youtube.com/@PrimerBlobs" target="_blank" rel="noopener noreferrer">Primer <span class="signals-desc">— simulations &amp; complex systems</span></a></li>
+          <li><a href="https://www.youtube.com/@veritasium" target="_blank" rel="noopener noreferrer">Veritasium <span class="signals-desc">— scientific thinking &amp; deep inquiry</span></a></li>
+          <li><a href="https://www.youtube.com/@Vsauce2" target="_blank" rel="noopener noreferrer">Vsauce2 <span class="signals-desc">— curiosity-driven science &amp; analytical exploration</span></a></li>
+          <li><a href="https://www.youtube.com/@QuantaScienceChannel" target="_blank" rel="noopener noreferrer">Quanta Magazine <span class="signals-desc">— advanced mathematics &amp; fundamental science</span></a></li>
+          <li><a href="https://www.youtube.com/@datapizza" target="_blank" rel="noopener noreferrer">Datapizza <span class="signals-desc">— data science, AI &amp; digital culture</span></a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================================
+     CONTACT
+================================================================ -->
+<section id="contact" aria-label="Contact">
+  <div class="container">
+    <p class="section-label fade-in">Say Hello</p>
+    <h2 class="section-title fade-in fade-in-delay-1">Contact</h2>
+    <p class="about-text fade-in fade-in-delay-2" style="margin-top:12px;">
+      Feel free to reach out for collaborations, questions, or just to say hi.
+    </p>
+
+    <div class="contact-grid">
+
+      <a href="mailto:gabrielepaganelli13@gmail.com" class="contact-item fade-in">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        <div>
+          <div class="contact-label">Email</div>
+          <span>gabrielepaganelli13@gmail.com</span>
+        </div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/gabriele-paganelli" target="_blank" rel="noopener noreferrer" class="contact-item fade-in fade-in-delay-1">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+          <rect x="2" y="9" width="4" height="12"/>
+          <circle cx="4" cy="4" r="2"/>
+        </svg>
+        <div>
+          <div class="contact-label">LinkedIn</div>
+          <span>linkedin.com/in/gabriele-paganelli</span>
+        </div>
+      </a>
+
+      <a href="https://github.com/GabriPaganelli" target="_blank" rel="noopener noreferrer" class="contact-item fade-in fade-in-delay-2">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.167 6.839 9.49.5.09.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.577.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+        </svg>
+        <div>
+          <div class="contact-label">GitHub</div>
+          <span>github.com/GabriPaganelli</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================================
+     FOOTER
+================================================================ -->
+<footer>
+  <div class="container">
+    <p>Gabriele Paganelli &copy; <span id="year"></span></p>
+  </div>
+</footer>
+
+
+<script src="js/main.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:open.spotify.com)",
+      "Bash(python3 -c \":*)",
+      "Bash(for file in energy-market-01.pdf energy-market-02.pdf energy-market-03.pdf icecube-01.pdf icecube-02.pdf mice-lfp-01.pdf mice-lfp-02.pdf mice-lfp-03.pdf text-analysis-01.pdf text-analysis-02.pdf text-analysis-03.pdf pantheon-02.pdf pantheon-03.pdf)",
+      "Bash(do)",
+      "Bash(echo \"=== $file ===\")",
+      "Bash(pdftotext -f 1 -l 1 \"$file\" -)",
+      "Bash(done)"
+    ]
+  }
+}
