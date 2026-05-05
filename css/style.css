@@ -841,6 +841,12 @@ footer p {
   height: auto;
 }
 
+.visual-video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .visual-placeholder {
   aspect-ratio: 16/10;
   background: var(--bg-card);
