@@ -979,6 +979,12 @@ a.activity-name:hover { color: var(--accent-hover); }
   border-color: rgba(212, 160, 23, 0.28);
 }
 
+.status-speaker {
+  color: #a78bfa;
+  background: rgba(167, 139, 250, 0.10);
+  border-color: rgba(167, 139, 250, 0.28);
+}
+
 @media (max-width: 480px) {
   .activity-item { gap: 12px; padding: 13px 16px; }
   .activity-status { display: none; }
