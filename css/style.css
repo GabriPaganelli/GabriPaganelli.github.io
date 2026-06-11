@@ -524,7 +524,7 @@ nav.scrolled {
   transition: max-height 0.45s ease;
 }
 
-.project-card.open .project-body { max-height: 700px; }
+.project-card.open .project-body { max-height: 1500px; }
 
 .project-body-inner {
   padding: 0 26px 26px;
@@ -1031,12 +1031,17 @@ a.activity-name:hover { color: var(--accent-hover); }
    ANIMATIONS
 =================================================================== */
 .fade-in {
-  opacity: 0;
-  transform: translateY(22px);
   transition: opacity 0.65s ease, transform 0.65s ease;
 }
 
-.fade-in.visible {
+/* Only hide pre-animation when JS is available, so the site stays
+   fully visible if the script fails to load. */
+.js .fade-in {
+  opacity: 0;
+  transform: translateY(22px);
+}
+
+.js .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -1074,4 +1079,52 @@ a.activity-name:hover { color: var(--accent-hover); }
   .project-header { padding: 18px 20px; }
   .project-body-inner { padding: 0 20px 22px; }
   .project-header-left { gap: 12px; }
+}
+
+/* === CV LINKS === */
+.cv-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* === CURRENTLY === */
+.about-current {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  margin-top: 26px;
+  max-width: 620px;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+.current-dot {
+  flex-shrink: 0;
+  width: 9px;
+  height: 9px;
+  margin-top: 7px;
+  border-radius: 50%;
+  background: #5dbf8a;
+  box-shadow: 0 0 0 0 rgba(93, 191, 138, 0.5);
+  animation: currentPulse 2.4s ease infinite;
+}
+
+@keyframes currentPulse {
+  0%   { box-shadow: 0 0 0 0 rgba(93, 191, 138, 0.45); }
+  70%  { box-shadow: 0 0 0 7px rgba(93, 191, 138, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(93, 191, 138, 0); }
+}
+
+
+/* === REDUCED MOTION === */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .js .fade-in { opacity: 1; transform: none; }
 }

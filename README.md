@@ -7,20 +7,25 @@ Personal portfolio site built with plain HTML, CSS, and JavaScript. No build ste
 ```
 /
 ├── index.html                          # Main single-page site
+├── 404.html                            # GitHub Pages error page
+├── robots.txt
+├── sitemap.xml
 ├── projects/
+│   ├── anac-pu-learning.html           # APPalti: PU Learning for Italian Procurement Fraud
+│   ├── crop-soil-analysis.html         # Soil Nutrient Depth Profiles (Bayesian)
 │   ├── energy-market.html              # Italian Energy Market Analysis
 │   ├── icecube.html                    # IceCube Neutrino Clustering
 │   ├── mice-lfp.html                   # Mice LFP: GRU-Transformer
 │   ├── simpsons-family-guy.html        # Simpsons vs Family Guy
-│   ├── pantheon.html                   # Bachelor's Thesis: The Web of Fame
-│   └── anac-pu-learning.html           # PU Learning for Italian Procurement Fraud
+│   └── pantheon.html                   # Bachelor's Thesis: The Web of Fame
 ├── css/style.css
 ├── js/main.js
 └── assets/
     ├── fonts/                          # Self-hosted Inter
-    ├── images/                         # Project figures (PDF, PNG, WebM)
+    ├── images/                         # Project figures, favicon, OG card
     └── pdfs/
-        ├── cv.pdf
+        ├── cv.pdf                      # CV (English)
+        ├── cv-ita.pdf                  # CV (Italian)
         ├── overviews/                  # One-page project overviews
         └── reports/                    # Full technical reports
 ```

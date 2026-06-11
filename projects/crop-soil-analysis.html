@@ -1,16 +1,16 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Time series forecasting and multivariate modeling of Italy's energy market: gas prices, renewables, and the national electricity price with SARIMA, VAR, transfer function, and cointegration models." />
-  <link rel="canonical" href="https://gabripaganelli.github.io/projects/energy-market.html" />
-  <title>Italian Energy Market Analysis · Gabriele Paganelli</title>
+  <meta name="description" content="Bayesian hierarchical modeling of soil organic carbon, nitrogen, and phosphorus depth profiles across 40 Tanzanian agricultural fields, with multivariate random effects in Stan and projpred variable selection." />
+  <link rel="canonical" href="https://gabripaganelli.github.io/projects/crop-soil-analysis.html" />
+  <title>Soil Nutrient Depth Profiles · Gabriele Paganelli</title>
 
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://gabripaganelli.github.io/projects/energy-market.html" />
-  <meta property="og:title" content="Italian Energy Market Analysis" />
-  <meta property="og:description" content="Time series forecasting and multivariate modeling of Italy's energy market dynamics." />
+  <meta property="og:url" content="https://gabripaganelli.github.io/projects/crop-soil-analysis.html" />
+  <meta property="og:title" content="Soil Nutrient Depth Profiles: Bayesian Hierarchical Modeling" />
+  <meta property="og:description" content="How organic carbon, nitrogen, and phosphorus change with depth across 40 Tanzanian agricultural fields, modeled with multivariate random effects in Stan." />
   <meta property="og:image" content="https://gabripaganelli.github.io/assets/images/og-card.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -46,7 +46,7 @@
     <li><a href="../index.html#home">Home</a></li>
     <li><a href="../index.html#projects">Projects</a></li>
     <li><a href="../index.html#activities">Activities</a></li>
-      <li><a href="../index.html#signals">Signals</a></li>
+    <li><a href="../index.html#signals">Signals</a></li>
     <li><a href="../index.html#contact">Contact</a></li>
   </ul>
 </div>
@@ -57,15 +57,15 @@
   <div class="container">
     <a href="../index.html#projects" class="back-link">&#8592; Back to Projects</a>
 
-    <p class="section-label">Project 03</p>
-    <h1 class="project-page-title">Italian Energy Market Analysis</h1>
-    <p class="project-page-subtitle">Time-series forecasting and multivariate modeling of Italy's energy market dynamics.</p>
+    <p class="section-label">Project 02</p>
+    <h1 class="project-page-title">Soil Nutrient Depth Profiles: Bayesian Hierarchical Modeling</h1>
+    <p class="project-page-subtitle">How organic carbon, nitrogen, and phosphorus change with depth across 40 Tanzanian agricultural fields, modeled with multivariate random effects in Stan.</p>
 
     <div class="project-page-tags">
-      <span class="tag-lg">SARIMA</span>
-      <span class="tag-lg">VAR</span>
-      <span class="tag-lg">Transfer Function</span>
-      <span class="tag-lg">Cointegration</span>
+      <span class="tag-lg">Bayesian Hierarchical Models</span>
+      <span class="tag-lg">Stan &amp; MCMC</span>
+      <span class="tag-lg">Variable Selection (projpred)</span>
+      <span class="tag-lg">Compositional Data (ILR)</span>
     </div>
   </div>
 </header>
@@ -77,7 +77,7 @@
     <p class="proj-section-label">Overview</p>
     <h2 class="proj-section-title">Abstract</h2>
     <p class="proj-text">
-      This study analyzed the dynamic relationships between natural gas prices, renewable energy production, and the Italian national electricity price (PUN) over 2021–2025. Using a combination of univariate SARIMA, VAR, transfer function, and cointegration models, we identified short- and long-term interactions, highlighting the dominant role of gas in price formation, and provided predictive evidence that TFM_Gas is superior for short- to medium-term forecasting.
+      We modeled the vertical distribution of soil organic carbon, total nitrogen, and total phosphorus across 40 Tanzanian agricultural fields. The final model is a Bayesian hierarchical specification with field-level random intercepts and slopes, modeled jointly as multivariate random effects in Stan via cmdstanr, where a six-dimensional LKJ covariance structure captures the cross-response correlations between them. Model selection relied on LOO-CV, and robustness was assessed through sensitivity to influential observations, a Gaussian process spatial term, and a frequentist re-fit.
     </p>
   </div>
 </section>
@@ -89,7 +89,7 @@
     <p class="proj-section-label">Insight</p>
     <h2 class="proj-section-title">Key Takeaway</h2>
     <p class="proj-text">
-      Gas prices remain the main driver of the PUN, with renewables having secondary, mediated effects. VAR and transfer function models reveal unidirectional causality from gas to PUN, with short-term dynamics captured more effectively by transfer function models. Despite market turbulence in 2022, the modeling framework provides actionable insights for energy market monitoring.
+      Fields with higher mean organic carbon show significantly flatter depth profiles: carbon fertility is better preserved at depth. The pattern is absent for nitrogen and moderate for phosphorus. Predictive variable selection with projpred identifies fine soil texture (the fine fraction vs. sand ILR contrast) as the dominant within-field predictor, while management practices are not significant once the physical structure of the soil is accounted for.
     </p>
   </div>
 </section>
@@ -101,9 +101,9 @@
     <p class="proj-section-label">Figures</p>
     <h2 class="proj-section-title">Visuals</h2>
     <div class="visuals-grid">
-      <div class="visual-cell"><canvas class="visual-pdf" data-pdf-src="../assets/images/energy-market-01.pdf"></canvas></div>
-      <div class="visual-cell"><canvas class="visual-pdf" data-pdf-src="../assets/images/energy-market-02.pdf"></canvas></div>
-      <div class="visual-cell"><canvas class="visual-pdf" data-pdf-src="../assets/images/energy-market-03.pdf"></canvas></div>
+      <div class="visual-cell"><canvas class="visual-pdf" data-pdf-src="../assets/images/crop-soil/crop-01-texture-triangle.pdf"></canvas></div>
+      <div class="visual-cell"><canvas class="visual-pdf" data-pdf-src="../assets/images/crop-soil/crop-02-vertical-profiles.pdf"></canvas></div>
+      <div class="visual-cell"><canvas class="visual-pdf" data-pdf-src="../assets/images/crop-soil/crop-03-projpred.pdf"></canvas></div>
     </div>
   </div>
 </section>
@@ -115,15 +115,15 @@
     <p class="proj-section-label">Resources</p>
     <h2 class="proj-section-title">Links</h2>
     <div class="proj-links">
-      <a href="https://github.com/GabriPaganelli/italian-energy-market" class="proj-link-btn" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/GabriPaganelli/crop-soil-analysis" class="proj-link-btn" target="_blank" rel="noopener noreferrer">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.167 6.839 9.49.5.09.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.577.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
         GitHub Repository
       </a>
-      <a href="../assets/pdfs/overviews/energy-market-overview.pdf" class="proj-link-btn" target="_blank" rel="noopener noreferrer">
+      <a href="../assets/pdfs/overviews/crop-soil-overview.pdf" class="proj-link-btn" target="_blank" rel="noopener noreferrer">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
         PDF Overview
       </a>
-      <a href="../assets/pdfs/reports/energy-market-report.pdf" class="proj-link-btn" target="_blank" rel="noopener noreferrer">
+      <a href="../assets/pdfs/reports/crop-soil-report.pdf" class="proj-link-btn" target="_blank" rel="noopener noreferrer">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
         Technical Report
       </a>
@@ -145,5 +145,3 @@
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
-
-

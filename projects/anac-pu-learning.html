@@ -3,14 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="APPalti: PU Learning for Italian Procurement Fraud — Gabriele Paganelli" />
-  <title>APPalti: PU Learning for Italian Procurement Fraud — Gabriele Paganelli</title>
+  <meta name="description" content="APPalti: corruption risk scoring across 9.5 million Italian public contracts using Positive-Unlabeled learning, LightGBM, and SHAP. 1st Prize, University of Padova." />
+  <link rel="canonical" href="https://gabripaganelli.github.io/projects/anac-pu-learning.html" />
+  <title>APPalti: PU Learning for Italian Procurement Fraud · Gabriele Paganelli</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://gabripaganelli.github.io/projects/anac-pu-learning.html" />
+  <meta property="og:title" content="APPalti: PU Learning for Italian Procurement Fraud" />
+  <meta property="og:description" content="Corruption risk scoring across 9.5 million Italian public contracts. 1st Prize, University of Padova." />
+  <meta property="og:image" content="https://gabripaganelli.github.io/assets/images/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://gabripaganelli.github.io/assets/images/og-card.png" />
+
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="../css/style.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
@@ -57,7 +67,7 @@
       <span class="tag-lg">LightGBM</span>
       <span class="tag-lg">APPalti</span>
     </div>
-    <div class="award-banner">🏆 1st Prize — Laboratorio di Statistica con le Aziende, Università di Padova · 2026</div>
+    <div class="award-banner">🏆 1st Prize · Laboratorio di Statistica con le Aziende, Università di Padova · 2026</div>
   </div>
 </header>
 
@@ -68,7 +78,7 @@
     <p class="proj-section-label">Overview</p>
     <h2 class="proj-section-title">Abstract</h2>
     <p class="proj-text">
-      We built a fraud detection pipeline for Italian public procurement, training on 9.5 million ANAC contracts (2008–2025) under a Positive-Unlabeled learning framework that accounts for severe labeling asymmetry: only contracts with favorable TAR court rulings or crime-related closures are labeled corrupt, while the remainder are unlabeled. Three temporal models — ex-ante, in-itinere, and ex-post — integrate procurement microdata with ISTAT territorial indicators. The nnPU risk estimator with LightGBM serves as the reference model, and results are exposed through APPalti, a Streamlit application for single-contract and batch-level corruption risk scoring with SHAP-based explanations.
+      We built a fraud detection pipeline for Italian public procurement, training on 9.5 million ANAC contracts (2008–2025) under a Positive-Unlabeled learning framework that accounts for severe labeling asymmetry: only contracts with favorable TAR court rulings or crime-related closures are labeled corrupt, while the remainder are unlabeled. Three temporal models covering the tendering, award, and execution phases of each contract integrate procurement microdata with ISTAT territorial indicators. The nnPU risk estimator with LightGBM serves as the reference model, and results are exposed through APPalti, a Streamlit application for single-contract and batch-level corruption risk scoring with SHAP-based explanations.
     </p>
   </div>
 </section>
@@ -81,7 +91,7 @@
     <h2 class="proj-section-title">Award</h2>
     <p class="proj-text">
       This project was awarded <strong>1st Prize</strong> at the
-      <a href="https://www.stat.unipd.it/laboratorio-di-statistica-con-le-aziende-studenti-magistrali" target="_blank" rel="noopener noreferrer">Laboratorio di Statistica con le Aziende</a>,
+      <a href="https://www.instagram.com/p/DYw8VkvApih/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">Laboratorio di Statistica con le Aziende</a>,
       organized by the Department of Statistical Sciences at the University of Padova (2026 edition).
       Projects were evaluated on statistical methodology, business applicability, and communication quality.
     </p>
@@ -95,7 +105,7 @@
     <p class="proj-section-label">Insight</p>
     <h2 class="proj-section-title">Key Takeaway</h2>
     <p class="proj-text">
-      The nnPU LightGBM model achieves a Lift@1% of 21.9 on the ex-post model, identifying high-risk contracts at over 20× the base rate; Platt scaling brings calibrated ECE below 0.06. SHAP analysis reveals lot amount, delegation structure, award delay, and cost overrun as the most robust signals — consistent with established corruption mechanisms in Italian public procurement.
+      The nnPU LightGBM model achieves a Lift@1% of 21.9 on the ex-post model, identifying high-risk contracts at over 20× the base rate; Platt scaling brings calibrated ECE below 0.06. SHAP analysis reveals contract amount (all datasets), bid window, award delay, and admitted bids in the tendering and award phases, and cost overrun in the execution phase as the most robust signals, consistent with established corruption mechanisms in Italian public procurement.
     </p>
   </div>
 </section>
@@ -107,8 +117,8 @@
     <p class="proj-section-label">Figures</p>
     <h2 class="proj-section-title">Visuals</h2>
     <div class="visuals-grid">
-      <div class="visual-cell"><img class="visual-img" src="../assets/images/anac-pu-01.png" alt="ANAC PU Learning analysis output" /></div>
-      <div class="visual-cell"><img class="visual-img" src="../assets/images/anac-pu-02.png" alt="ANAC PU Learning analysis output" /></div>
+      <div class="visual-cell"><img class="visual-img" src="../assets/images/anac-pu-01.png" alt="Corruption risk scores across Italian provinces from the nnPU LightGBM model" loading="lazy" /></div>
+      <div class="visual-cell"><img class="visual-img" src="../assets/images/anac-pu-02.png" alt="SHAP feature importance for the procurement fraud risk model" loading="lazy" /></div>
       <div class="visual-cell">
         <video class="visual-video" autoplay muted loop playsinline title="Click to fullscreen" style="cursor:pointer" onclick="this.requestFullscreen()">
           <source src="../assets/images/anac-pu-03.webm" type="video/webm" />
@@ -149,6 +159,9 @@
 <footer>
   <div class="container">
     <p>Gabriele Paganelli &copy; <span id="year"></span></p>
+    <p style="margin-top: 6px; font-size: 0.75rem; color: var(--text-faint);">
+      This site does not use profiling cookies or tracking systems.
+    </p>
   </div>
 </footer>
 

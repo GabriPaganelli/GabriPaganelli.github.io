@@ -3,14 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="The Web of Fame — Bachelor's Thesis — Gabriele Paganelli" />
-  <title>The Web of Fame — Bachelor's Thesis — Gabriele Paganelli</title>
+  <meta name="description" content="Bachelor's thesis: a network analysis of over 11,000 historical figures from the Pantheon dataset, using centrality metrics and ERGMs on Wikipedia interaction networks." />
+  <link rel="canonical" href="https://gabripaganelli.github.io/projects/pantheon.html" />
+  <title>The Web of Fame · Bachelor's Thesis · Gabriele Paganelli</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://gabripaganelli.github.io/projects/pantheon.html" />
+  <meta property="og:title" content="The Web of Fame · Bachelor's Thesis" />
+  <meta property="og:description" content="A network analysis of historical fame and cross-domain influence using the Pantheon dataset." />
+  <meta property="og:image" content="https://gabripaganelli.github.io/assets/images/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://gabripaganelli.github.io/assets/images/og-card.png" />
+
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="../css/style.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
@@ -47,7 +57,7 @@
   <div class="container">
     <a href="../index.html#projects" class="back-link">&#8592; Back to Projects</a>
 
-    <p class="section-label">Project 06 &mdash; Bachelor's Thesis</p>
+    <p class="section-label">Project 07 · Bachelor's Thesis</p>
     <h1 class="project-page-title">The Web of Fame</h1>
     <p class="project-page-subtitle">A network analysis of historical fame and cross-domain influence using the Pantheon dataset.</p>
 
@@ -55,7 +65,6 @@
       <span class="tag-lg">Network Analysis</span>
       <span class="tag-lg">Centrality Metrics</span>
       <span class="tag-lg">ERGM</span>
-      <span class="tag-lg">Stochastic Block Models</span>
     </div>
   </div>
 </header>
@@ -91,7 +100,7 @@
     <p class="proj-section-label">Figures</p>
     <h2 class="proj-section-title">Visuals</h2>
     <div class="visuals-grid">
-      <div class="visual-cell"><img src="../assets/images/pantheon-01.png" class="visual-img" alt="Figure 1" loading="lazy" /></div>
+      <div class="visual-cell"><img src="../assets/images/pantheon-01.png" class="visual-img" alt="Network of historical figures from the Pantheon dataset, colored by domain" loading="lazy" /></div>
       <div class="visual-cell"><canvas class="visual-pdf" data-pdf-src="../assets/images/pantheon-02.pdf"></canvas></div>
       <div class="visual-cell"><canvas class="visual-pdf" data-pdf-src="../assets/images/pantheon-03.pdf"></canvas></div>
     </div>
@@ -125,6 +134,9 @@
 <footer>
   <div class="container">
     <p>Gabriele Paganelli &copy; <span id="year"></span></p>
+    <p style="margin-top: 6px; font-size: 0.75rem; color: var(--text-faint);">
+      This site does not use profiling cookies or tracking systems.
+    </p>
   </div>
 </footer>
 
