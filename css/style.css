@@ -388,13 +388,6 @@ nav.scrolled {
   margin-bottom: 8px;
 }
 
-.about-placeholder-text {
-  color: var(--text-faint);
-  font-style: italic;
-  border-left: 2px solid var(--border-hover);
-  padding-left: 16px;
-}
-
 .about-badges {
   display: flex;
   flex-wrap: wrap;
@@ -568,12 +561,6 @@ nav.scrolled {
   background: var(--accent-dim);
 }
 
-.link-btn.placeholder {
-  opacity: 0.38;
-  pointer-events: none;
-  cursor: default;
-}
-
 .view-project {
   display: inline-flex;
   align-items: center;
@@ -643,8 +630,10 @@ nav.scrolled {
 .signals-list li a:hover { color: var(--text); }
 
 .signals-desc {
+  display: block;
+  margin-top: 3px;
   color: var(--text-faint);
-  font-size: 0.88rem;
+  font-size: 0.82rem;
   transition: color var(--transition);
 }
 
@@ -798,13 +787,6 @@ footer p {
   max-width: 680px;
 }
 
-.proj-placeholder {
-  font-style: italic;
-  color: var(--text-faint);
-  border-left: 2px solid var(--border-hover);
-  padding-left: 16px;
-}
-
 /* Visuals grid */
 .visuals-grid {
   display: flex;
@@ -847,23 +829,6 @@ footer p {
   height: auto;
 }
 
-.visual-placeholder {
-  aspect-ratio: 16/10;
-  background: var(--bg-card);
-  border: 1px dashed rgba(74, 144, 226, 0.18);
-  border-radius: var(--radius);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  color: var(--text-faint);
-  font-size: 0.78rem;
-  font-style: italic;
-}
-
-.visual-placeholder svg { opacity: 0.25; }
-
 /* Project page links */
 .proj-links {
   display: flex;
@@ -890,11 +855,6 @@ footer p {
   border-color: var(--accent);
   color: var(--accent);
   background: var(--accent-dim);
-}
-
-.proj-link-btn.placeholder {
-  opacity: 0.36;
-  pointer-events: none;
 }
 
 /* === ACTIVITIES === */
