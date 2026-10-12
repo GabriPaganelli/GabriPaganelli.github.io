@@ -946,8 +946,9 @@ a.activity-name:hover { color: var(--accent-hover); }
 }
 
 @media (max-width: 480px) {
-  .activity-item { gap: 12px; padding: 13px 16px; }
-  .activity-status { display: none; }
+  .activity-item { flex-wrap: wrap; align-items: flex-start; gap: 6px 12px; padding: 13px 16px; }
+  .activity-body { flex: 1 1 calc(100% - 42px); }
+  .activity-status { margin-left: 42px; }
 }
 
 /* === AWARD === */
