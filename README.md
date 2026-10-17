@@ -1,5 +1,10 @@
 # Gabriele Paganelli — Personal Website
 
+[Live site](https://gabripaganelli.github.io/)
+
+![Site preview card](assets/images/og-card.png)
+*Social preview card of the site*
+
 Personal portfolio site built with plain HTML, CSS, and JavaScript. No build step required.
 
 ## Structure
@@ -10,6 +15,7 @@ Personal portfolio site built with plain HTML, CSS, and JavaScript. No build ste
 ├── 404.html                            # GitHub Pages error page
 ├── robots.txt
 ├── sitemap.xml
+├── .gitattributes
 ├── projects/
 │   ├── anac-pu-learning.html           # APPalti: PU Learning for Italian Procurement Fraud
 │   ├── crop-soil-analysis.html         # Soil Nutrient Depth Profiles (Bayesian)
@@ -27,12 +33,21 @@ Personal portfolio site built with plain HTML, CSS, and JavaScript. No build ste
         ├── cv.pdf                      # CV (English)
         ├── cv-ita.pdf                  # CV (Italian)
         ├── overviews/                  # One-page project overviews
+        ├── poster-anac-pu-learning.pdf # APPalti poster
         └── reports/                    # Full technical reports
 ```
+
+## Run locally
+
+```bash
+python -m http.server 8000
+```
+
+Then open http://localhost:8000.
 
 ## Deploying on GitHub Pages
 
 1. Push this repository to GitHub
 2. Go to **Settings → Pages**
 3. Set source to **main branch / root**
-4. The site will be live at `https://<username>.github.io/<repo-name>/`
+4. The site will be live at `https://gabripaganelli.github.io/`
