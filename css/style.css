@@ -1079,6 +1079,40 @@ a.activity-name:hover { color: var(--accent-hover); }
 }
 
 
+/* === WORK IN PROGRESS (progetti in corso) === */
+.wip-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 3px 10px;
+  background: rgba(93, 191, 138, 0.10);
+  border: 1px solid rgba(93, 191, 138, 0.28);
+  border-radius: 100px;
+  font-size: 0.70rem;
+  font-weight: 600;
+  color: #5dbf8a;
+  margin-top: 6px;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.wip-badge .current-dot {
+  width: 7px;
+  height: 7px;
+  margin-top: 0;
+}
+
+.link-btn-soon,
+.link-btn-soon:hover {
+  border-style: dashed;
+  border-color: var(--border-hover);
+  color: var(--text-muted);
+  background: none;
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+
 /* === REDUCED MOTION === */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
